@@ -40,6 +40,7 @@ namespace NotificationsDemo
             {
                 var items = db.Items.Count();
                 TxtCount.Text = items.ToString();
+              //  MessageBox.Show(items.ToString());
             }
         }
 
@@ -59,6 +60,12 @@ namespace NotificationsDemo
             {
                 LoadData();
             }
+        }
+
+        private void BtnRecieve_Click(object sender, EventArgs e)
+        {
+            var fm = new FrmReciever();
+            fm.Show();
         }
     }
 }

@@ -31,6 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.TxtCount = new System.Windows.Forms.TextBox();
             this.BtnAdd = new System.Windows.Forms.Button();
+            this.BtnRecieve = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -60,11 +61,22 @@
             this.BtnAdd.UseVisualStyleBackColor = true;
             this.BtnAdd.Click += new System.EventHandler(this.BtnAdd_Click);
             // 
+            // BtnRecieve
+            // 
+            this.BtnRecieve.Location = new System.Drawing.Point(23, 104);
+            this.BtnRecieve.Name = "BtnRecieve";
+            this.BtnRecieve.Size = new System.Drawing.Size(292, 23);
+            this.BtnRecieve.TabIndex = 3;
+            this.BtnRecieve.Text = "Reciever Form";
+            this.BtnRecieve.UseVisualStyleBackColor = true;
+            this.BtnRecieve.Click += new System.EventHandler(this.BtnRecieve_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(329, 217);
+            this.Controls.Add(this.BtnRecieve);
             this.Controls.Add(this.BtnAdd);
             this.Controls.Add(this.TxtCount);
             this.Controls.Add(this.label1);
@@ -81,6 +93,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox TxtCount;
         private System.Windows.Forms.Button BtnAdd;
+        private System.Windows.Forms.Button BtnRecieve;
     }
 }
 

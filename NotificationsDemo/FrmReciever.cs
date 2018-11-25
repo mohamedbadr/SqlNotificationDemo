@@ -22,14 +22,12 @@ namespace NotificationsDemo
         public FrmReciever()
         {
             InitializeComponent();
-           // _sqlDependency = new SqlDependency();
           
         }
 
         private void FrmReciever_Load(object sender, EventArgs e)
         {
             _dependency = new SqlTableDependency<Item>(ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString, "Items");
-           // SqlDependency.dependency.Activ
             _dependency.OnChanged += OnChanged;
             _dependency.Start();
         }

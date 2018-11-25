@@ -84,11 +84,11 @@
     <Compile Include="Data\Item.cs">
       <DependentUpon>DataModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="FrmReceiever.cs">
+    <Compile Include="FrmReciever.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmReceiever.Designer.cs">
-      <DependentUpon>FrmReceiever.cs</DependentUpon>
+    <Compile Include="FrmReciever.Designer.cs">
+      <DependentUpon>FrmReciever.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmSender.cs">
       <SubType>Form</SubType>
@@ -98,6 +98,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmReciever.resx">
+      <DependentUpon>FrmReciever.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmSender.resx">
       <DependentUpon>FrmSender.cs</DependentUpon>
     </EmbeddedResource>
@@ -130,7 +133,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Data\DataModel.Context.tt">
