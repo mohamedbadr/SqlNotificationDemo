@@ -50,7 +50,10 @@ namespace NotificationsDemo
             using (var db = new NotificationsDemoEntities())
             {
                 var items = db.Items.Count();
-                TxtCount.Text = items.ToString();
+
+                TxtCount.Invoke(new Action(() => TxtCount.Text = items.ToString()));
+
+              //  TxtCount.Text = items.ToString();
             }
         }
     }
